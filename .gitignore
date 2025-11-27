@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Temporary files
+*.tmp
+.temp/
+
+# Vercel
+.vercel
+
+# Git
+.git/
+
+# Scraper files
+scrape-site.js
+.visited-urls.txt
+
+# Test files
+test-*.js
+fix-*.js
+*_rewrite*.js
+*_rewrites*.js
+check_*.js
+verify_*.js
+show_*.js
+process_*.js
+extract_*.js
+apply_*.js
+refine_*.js
+smart_*.js
+comprehensive_*.js
+aggressive_*.js
+better_*.js
+enhance_*.js
+final_*.js
+content_*.json
+

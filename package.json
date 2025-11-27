@@ -1,0 +1,20 @@
+{
+  "name": "digital-growth-studios",
+  "version": "1.0.0",
+  "description": "Digital Growth Studios website",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd blackpropeller.com && node server.js",
+    "serve": "cd blackpropeller.com && node server.js",
+    "dev": "cd blackpropeller.com && node server.js"
+  },
+  "keywords": [
+    "digital-marketing",
+    "seo",
+    "ppc"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
+
