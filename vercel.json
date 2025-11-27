@@ -3,7 +3,6 @@
   "buildCommand": "",
   "outputDirectory": "blackpropeller.com",
   "installCommand": "",
-  "framework": "static",
   "cleanUrls": false,
   "trailingSlash": false
 }
