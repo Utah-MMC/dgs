@@ -6,6 +6,18 @@
   "framework": null,
   "rewrites": [
     {
+      "source": "/company",
+      "destination": "/company/index.html"
+    },
+    {
+      "source": "/company/",
+      "destination": "/company/index.html"
+    },
+    {
+      "source": "/(.*)/",
+      "destination": "/$1/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/$1"
     }
