@@ -1,26 +1,7 @@
 {
   "version": 2,
-  "public": false,
-  "builds": [
-    {
-      "src": "blackpropeller.com/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/blackpropeller.com/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/blackpropeller.com/index.html"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/blackpropeller.com/$1"
-    }
-  ]
+  "buildCommand": null,
+  "outputDirectory": "blackpropeller.com",
+  "installCommand": null,
+  "framework": null
 }
