@@ -1,0 +1,120 @@
+/* Global theme alignment with homepage */
+:root {
+  --bp-primary:#051334;
+  --bp-secondary:#304165;
+  --bp-accent:#fb006f;
+  --bp-surface:#f3f3f3;
+  --bp-font:'Inter','Helvetica Neue',Arial,sans-serif;
+}
+
+body {
+  background:#ffffff;
+  color:var(--bp-primary);
+  font-family:var(--bp-font);
+  line-height:1.6;
+}
+
+a {
+  color:var(--bp-accent);
+  text-decoration:none;
+}
+
+a:hover,
+a:focus {
+  color:#d3005c;
+  text-decoration:underline;
+}
+
+h1,h2,h3,h4,h5,h6,
+.fusion-title h1,
+.fusion-title h2,
+.fusion-title h3,
+.fusion-title h4,
+.fusion-title h5,
+.fusion-title h6 {
+  color:var(--bp-primary);
+  letter-spacing:-0.01em;
+}
+
+.fusion-text,
+.fusion-builder-row p {
+  color:var(--bp-secondary);
+}
+
+.fusion-button,
+.canvas-contact,
+.fusion-button-default {
+  background:var(--bp-accent) !important;
+  border-color:var(--bp-accent) !important;
+  color:#ffffff !important;
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+
+.fusion-button:hover,
+.canvas-contact:hover,
+.fusion-button-default:hover {
+  transform:translateY(-1px);
+  box-shadow:0 10px 30px rgba(251,0,111,0.25);
+}
+
+.fusion-fullwidth {
+  background-color:#ffffff;
+}
+
+.fusion-fullwidth[style*="--awb-background-color:#f3f3f3"],
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] {
+  background-color:var(--bp-surface) !important;
+}
+
+.text-highlight {
+  color:var(--bp-accent);
+}
+
+.fusion-breadcrumbs a,
+.awb-menu__main-a,
+.awb-menu__sub-a {
+  color:var(--bp-primary);
+}
+
+.awb-menu__main-a:hover,
+.awb-menu__sub-a:hover {
+  color:var(--bp-accent);
+}
+
+.fusion-checklist .fusion-li-item .fusion-li-icon {
+  color:var(--bp-accent);
+}
+
+/* Card/section polish */
+.fusion-column-wrapper,
+.fusion-column-inner-bg {
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.fusion-imageframe img {
+  border-radius:8px;
+}
+
+/* Testimonial section with dark blue background and white margins */
+.fusion-builder-row-14 {
+  background-color: #051334 !important;
+  margin-left: 60px !important;
+  margin-right: 60px !important;
+  margin-bottom: 60px !important;
+  padding: 60px 0 !important;
+  border-radius: 0 !important;
+}
+
+.fusion-builder-row-14 .fusion-builder-row {
+  max-width: 100% !important;
+}
+
+.fusion-builder-row-14 .rev_slider_wrapper {
+  background-color: #051334;
+}
+
+/* Ensure white background shows around the section */
+body {
+  background-color: #ffffff;
+}
