@@ -4,41 +4,12 @@
   "outputDirectory": "blackpropeller.com",
   "installCommand": "",
   "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    {
-      "source": "/company",
-      "destination": "/company/index.html"
-    },
-    {
-      "source": "/company/",
-      "destination": "/company/index.html"
-    },
     {
       "source": "/(.*)/",
       "destination": "/$1/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
     }
   ]
 }
