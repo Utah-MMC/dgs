@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": null,
-  "outputDirectory": "blackpropeller.com",
-  "installCommand": null,
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "installCommand": "",
   "framework": null
 }
