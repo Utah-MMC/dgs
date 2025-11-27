@@ -2,7 +2,7 @@
 
 This is the static website for Digital Growth Studios, deployed on Vercel.
 
-Last updated: 2025
+Last updated: November 27, 2025
 
 ## Local Development
 
