@@ -3,13 +3,5 @@
   "buildCommand": "",
   "outputDirectory": "blackpropeller.com",
   "installCommand": "",
-  "framework": null,
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/(.*)/",
-      "destination": "/$1/index.html"
-    }
-  ]
+  "framework": null
 }
