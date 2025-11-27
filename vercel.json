@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "",
-  "outputDirectory": "blackpropeller.com",
-  "installCommand": "",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/blackpropeller.com/$1"
+    },
+    {
+      "source": "/",
+      "destination": "/blackpropeller.com/index.html"
+    }
+  ],
   "cleanUrls": false,
   "trailingSlash": false
 }
