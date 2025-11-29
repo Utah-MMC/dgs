@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "."
+      }
+    }
+  ],
+  "buildCommand": "echo \"Using prebuilt static snapshot\"",
+  "installCommand": "echo \"Skip install (static site)\"",
+  "routes": [
+    { "handle": "filesystem" }
+  ]
+}

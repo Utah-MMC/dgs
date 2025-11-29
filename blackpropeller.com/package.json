@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+"scripts": {
+    "vercel-build": "echo \"Using prebuilt static snapshot\"",
     "start": "node server.js",
     "serve": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
