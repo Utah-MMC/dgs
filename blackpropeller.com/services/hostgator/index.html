@@ -277,6 +277,24 @@ Fine, Twist Our Arm<span class="text-highlight">.</span></p></h2></div></div></d
   .hero-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.9rem;}
   .hero-card-title{font-size:0.95rem;letter-spacing:0.07em;color:#e5e7eb;font-weight:700;text-transform:uppercase;}
   .hero-card-sub{color:#9ca3af;font-size:0.82rem;}
+  .hero{background:linear-gradient(135deg,var(--hg-navy) 0%,#020a22 60%,#0c1f4e 100%);color:#fff;padding:3.5rem 0 3rem;}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:2.5rem;align-items:center;}
+  .hero-tag{display:inline-flex;align-items:center;gap:0.4rem;padding:0.25rem 0.75rem;border-radius:999px;background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.5);color:#bbf7d0;font-size:0.78rem;margin-bottom:0.9rem;}
+  .hero-tag span{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.12em;opacity:0.85;}
+  .hero-title{font-size:clamp(2.15rem,4vw,3.1rem);line-height:1.12;letter-spacing:-0.035em;margin-bottom:0.75rem;}
+  .hero-title .gradient{background:linear-gradient(120deg,#a5b4fc,#38bdf8,#4ade80);-webkit-background-clip:text;color:transparent;}
+  .hero-subtitle{color:var(--hg-muted);font-size:0.98rem;max-width:32rem;margin-bottom:1.5rem;}
+  .hero-badges{display:flex;flex-wrap:wrap;gap:0.75rem;margin-top:1.25rem;font-size:0.78rem;color:#e5e7eb;}
+  .hero-badge{padding:0.25rem 0.8rem;border-radius:999px;border:1px solid rgba(148,163,184,0.3);background:radial-gradient(circle at top left,rgba(79,70,229,0.3),rgba(15,23,42,0.9));}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:1.75rem;margin-top:1.8rem;}
+  .hero-meta-item{font-size:0.8rem;color:var(--hg-muted);}
+  .hero-meta-item strong{display:block;font-size:0.95rem;color:#e5e7eb;}
+  .hero-card-blur{position:absolute;inset:-40%;background:radial-gradient(circle at 10% 0%,rgba(129,140,248,0.15),transparent 50%),radial-gradient(circle at 80% 10%,rgba(34,211,238,0.15),transparent 55%),radial-gradient(circle at 40% 80%,rgba(45,212,191,0.2),transparent 55%);opacity:0.9;z-index:-1;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.4rem;font-size:0.9rem;font-weight:600;border-radius:999px;padding:0.65rem 1.2rem;border:1px solid transparent;cursor:pointer;transition:all 0.18s ease-out;white-space:nowrap;text-decoration:none;}
+  .btn-primary{background:radial-gradient(circle at top left,#7aa2ff,var(--hg-blue));color:#f9fafb;box-shadow:0 16px 32px rgba(30,64,175,0.45);}
+  .btn-primary:hover{transform:translateY(-1px) scale(1.01);box-shadow:0 20px 40px rgba(30,64,175,0.6);}
+  .btn-ghost{background:transparent;border-color:rgba(148,163,184,0.4);color:var(--hg-muted);}
+  .btn-ghost:hover{border-color:rgba(249,250,251,0.7);color:#e5e7eb;background:rgba(15,23,42,0.35);}
   .hero-usage{background:rgba(15,23,42,0.8);border-radius:18px;padding:0.8rem 0.85rem;border:1px solid rgba(148,163,184,0.4);margin-bottom:1rem;}
   .hero-usage-row{display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:0.45rem;color:#e5e7eb;}
   .hero-usage-label{color:var(--hg-muted);font-size:0.75rem;}
@@ -351,67 +369,93 @@ Fine, Twist Our Arm<span class="text-highlight">.</span></p></h2></div></div></d
   @media (max-width:720px){.hg-hero{padding-top:2.6rem;} .hg-page section{padding:2.5rem 0;} .features-grid,.pricing-wrapper,.testimonials-grid{grid-template-columns:minmax(0,1fr);} .hero-meta{gap:1.2rem;} .cta-form{grid-template-columns:minmax(0,1fr);} .footer-inner{flex-direction:column;align-items:flex-start;}}
 </style>
 <main class="hg-page">
-  <section class="hg-hero">
-    <div class="hg-container hg-hero-grid">
-      <div>
-        <div class="hg-eyebrow">HostGator Reseller</div>
-        <h1>Managed HostGator hosting, migrations, and performance tuned for your sales.</h1>
-        <p class="hg-lead">We run the servers, security, speed, and support so you can focus on selling. Fast migrations, optimized WordPress stacks, and 24/7 monitoring on your HostGator reseller plan.</p>
-        <div class="hg-actions">
-          <a class="hg-btn" href="/contact/">Launch on HostGator</a>
-          <a class="hg-btn hg-outline" href="/results/">See success stories</a>
-        </div>
-      <div class="hg-badges">
-        <span class="hg-pill">Free migrations</span>
-        <span class="hg-pill">cPanel + WordPress experts</span>
-        <span class="hg-pill">Daily backups &amp; security</span>
-      </div>
-    </div>
-      <div class="hero-card">
-        <div class="hero-card-header">
+  <section class="hero">
+        <div class="hg-container hero-grid">
           <div>
-            <div class="hero-card-pill">White-label ready</div>
-            <div class="hero-card-title">Reseller stack</div>
-            <div class="hero-card-sub">HostGator + DGS ops</div>
+            <div class="hero-tag">
+              <span>Reseller Hosting</span> Launch your own hosting brand in minutes
+            </div>
+            <h1 class="hero-title">
+              Start selling <span class="gradient">profitable web hosting</span> with zero server headaches.
+            </h1>
+            <p class="hero-subtitle">
+              White-label cPanel reseller hosting on fast, secure servers. Perfect for designers, agencies, and freelancers who want recurring income from every website they build.
+            </p>
+            <div>
+              <a href="#pricing" class="btn btn-primary">Compare reseller plans</a>
+              <a href="#contact" class="btn btn-ghost">Book a quick call</a>
+            </div>
+
+            <div class="hero-badges">
+              <div class="hero-badge">100% white-label branding</div>
+              <div class="hero-badge">Free site migrations</div>
+              <div class="hero-badge">cPanel &amp; WHM access</div>
+            </div>
+
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <strong>510x profit margins</strong>
+                From each site you host for clients.
+              </div>
+              <div class="hero-meta-item">
+                <strong>Under 15 minutes</strong>
+                To spin up your first hosting package.
+              </div>
+            </div>
           </div>
-          <div class="hero-card-pill">24/7</div>
+
+          <aside class="hero-card" aria-label="Reseller hosting summary">
+            <div class="hero-card-blur"></div>
+            <div class="hero-card-header">
+              <div class="hero-card-title">Reseller Revenue Snapshot</div>
+              <div class="hero-card-pill">Live Preview</div>
+            </div>
+
+            <div class="hero-usage">
+              <div class="hero-usage-row">
+                <div>
+                  <div class="hero-usage-label">Monthly recurring revenue</div>
+                  <div><strong>$1,480</strong></div>
+                </div>
+                <div>
+                  <div class="hero-usage-label">Clients hosted</div>
+                  <div><strong>37</strong></div>
+                </div>
+              </div>
+              <div class="hero-usage-bar">
+                <span></span>
+              </div>
+            </div>
+
+            <div class="hero-stats-grid">
+              <div class="hero-stat">
+                <div class="hero-stat-label">Average profit per client</div>
+                <div class="hero-stat-value">$28/mo</div>
+                <div class="hero-stat-tag">From bundled hosting + care</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-label">Server health</div>
+                <div class="hero-stat-value">99.9%</div>
+                <div class="hero-stat-tag">SLA-backed uptime</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-label">Support coverage</div>
+                <div class="hero-stat-value">White-label</div>
+                <div class="hero-stat-tag">Client-facing helpdesk</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-label">Backup status</div>
+                <div class="hero-stat-value">Verified</div>
+                <div class="hero-stat-tag">Daily restores</div>
+              </div>
+            </div>
+            <div class="hero-card-footer">
+              <strong>Monitoring, alerts, and incident response bundled in.</strong>
+              <span class="hero-card-pill" style="text-transform:none;">Free migrations</span>
+            </div>
+          </aside>
         </div>
-        <div class="hero-usage">
-          <div class="hero-usage-row">
-            <span class="hero-usage-label">Resource allocations used</span>
-            <span>72%</span>
-          </div>
-          <div class="hero-usage-bar"><span></span></div>
-        </div>
-        <div class="hero-stats-grid">
-          <div class="hero-stat">
-            <div class="hero-stat-label">Uptime</div>
-            <div class="hero-stat-value">99.9%</div>
-            <div class="hero-stat-tag">SLA-backed</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-label">Migrations</div>
-            <div class="hero-stat-value">48 hrs</div>
-            <div class="hero-stat-tag">Avg cutover</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-label">Support</div>
-            <div class="hero-stat-value">White-label</div>
-            <div class="hero-stat-tag">Client-facing</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-label">Backups</div>
-            <div class="hero-stat-value">Daily</div>
-            <div class="hero-stat-tag">Verified restores</div>
-          </div>
-        </div>
-        <div class="hero-card-footer">
-          <span>Monitoring, alerts, and incident response bundled in.</span>
-          <span class="hero-card-pill" style="text-transform:none;">Free migrations</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
   <section>
     <div class="hg-container hg-grid-3">
