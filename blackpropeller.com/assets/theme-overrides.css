@@ -268,3 +268,64 @@ main#main {
 .fusion-fullwidth:not([style*="--awb-background-color"]):not([style*="background-color"]):not(.fusion-tb-header .fusion-fullwidth) {
   background-color: #ffffff !important;
 }
+
+/* Fix text color on white background sections - ensure dark text */
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] h1,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] h2,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] h3,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] h4,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] h5,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] h6,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] p,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] li,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] .fusion-text,
+.fusion-fullwidth[style*="--awb-background-color:#ffffff"] .fusion-title {
+  color: #051334 !important;
+}
+
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] .fusion-text,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] .fusion-text,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] .fusion-text,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] .fusion-text,
+.fusion-fullwidth[style*="background-color:#051334"] .fusion-text,
+.fusion-fullwidth[style*="background-color:#0c1428"] .fusion-text {
+  color: #ffffff !important;
+}
+
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] h1,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] h2,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] h3,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] h4,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] h5,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] h6,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] h1,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] h2,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] h3,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] h4,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] h5,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] h6,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] h1,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] h2,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] h3,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] h4,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] h5,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] h6,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] h1,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] h2,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] h3,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] h4,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] h5,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] h6 {
+  color: #ffffff !important;
+}
+
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] p,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color5)"] li,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] p,
+.fusion-fullwidth[style*="--awb-background-color:var(--awb-color7)"] li,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] p,
+.fusion-fullwidth[style*="--awb-background-color:#051334"] li,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] p,
+.fusion-fullwidth[style*="--awb-background-color:#0c1428"] li {
+  color: #ffffff !important;
+}
