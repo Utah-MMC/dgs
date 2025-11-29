@@ -24,9 +24,22 @@ const mimeTypes = {
   '.eot': 'application/vnd.ms-fontobject'
 };
 
+// URL redirects for shortcuts
+const redirects = {
+  '/hostgator': '/services/hostgator/',
+  '/hostgator/': '/services/hostgator/'
+};
+
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url);
   let pathname = parsedUrl.pathname;
+  
+  // Check for redirects first
+  if (redirects[pathname]) {
+    res.writeHead(301, { 'Location': redirects[pathname] });
+    res.end();
+    return;
+  }
   
   // Default to index.html for root
   if (pathname === '/') {
