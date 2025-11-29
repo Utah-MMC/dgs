@@ -118,3 +118,153 @@ h1,h2,h3,h4,h5,h6,
 body {
   background-color: #ffffff;
 }
+
+/* Ensure all content is visible - override any hiding rules */
+/* Only override visibility/opacity, don't force display types */
+.post-content,
+#content,
+#main,
+.fusion-text,
+.fusion-column-wrapper,
+.fusion-builder-row,
+.fusion-fullwidth {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Override any max-height or height:0 that might hide content */
+.post-content,
+#content,
+#main,
+.fusion-text,
+.fusion-column-wrapper {
+  max-height: none !important;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* Ensure content isn't clipped by overflow:hidden on column wrappers */
+.fusion-column-wrapper {
+  overflow: visible !important;
+}
+
+/* Make sure text content is visible and has proper color */
+.post-content p,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.post-content li,
+.fusion-text p,
+.fusion-text h1,
+.fusion-text h2,
+.fusion-text h3,
+.fusion-text h4,
+.fusion-text h5,
+.fusion-text h6,
+.fusion-text li {
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: var(--bp-primary) !important;
+}
+
+/* Ensure headings are visible */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.fusion-text h1,
+.fusion-text h2,
+.fusion-text h3,
+.fusion-text h4,
+.fusion-text h5,
+.fusion-text h6,
+.fusion-title h1,
+.fusion-title h2,
+.fusion-title h3,
+.fusion-title h4,
+.fusion-title h5,
+.fusion-title h6 {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Ensure paragraphs and lists are visible */
+.post-content p,
+.fusion-text p,
+.post-content ul,
+.post-content ol,
+.post-content li,
+.fusion-text ul,
+.fusion-text ol,
+.fusion-text li {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Header fixes - keep blue background and prevent underlapping */
+.fusion-tb-header {
+  position: relative !important;
+  z-index: 20051 !important;
+}
+
+.fusion-tb-header .fusion-fullwidth {
+  background-color: #051334 !important;
+  background: #051334 !important;
+}
+
+.fusion-tb-header .fusion-fullwidth,
+.fusion-tb-header .fusion-builder-row,
+.fusion-tb-header .fusion-layout-column,
+.fusion-tb-header .fusion-column-wrapper {
+  background-color: #051334 !important;
+  background: #051334 !important;
+}
+
+/* Ensure header stays on top and content doesn't overlap */
+.fusion-tb-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 20051 !important;
+}
+
+/* Add padding to main content to prevent underlapping */
+main#main {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.post-content {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ensure sections don't overlap header */
+.fusion-fullwidth:not(.fusion-tb-header .fusion-fullwidth) {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Ensure testimonial and content sections have backgrounds */
+.rev_slider_wrapper,
+.rs-module-wrap {
+  background-color: #051334 !important;
+  background: #051334 !important;
+}
+
+/* Ensure fusion-fullwidth sections with testimonials have dark blue background */
+.fusion-fullwidth:has(.rev_slider_wrapper),
+.fusion-fullwidth:has(rs-module-wrap),
+.fusion-fullwidth:has(.testimonial) {
+  background-color: #051334 !important;
+}
+
+/* Ensure sections with content but no explicit background get white background */
+.fusion-fullwidth:not([style*="--awb-background-color"]):not([style*="background-color"]):not(.fusion-tb-header .fusion-fullwidth) {
+  background-color: #ffffff !important;
+}
