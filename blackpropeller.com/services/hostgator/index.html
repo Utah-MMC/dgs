@@ -258,7 +258,7 @@ Fine, Twist Our Arm<span class="text-highlight">.</span></p></h2></div></div></d
 </div></div></div></div></div></div></div></div></div></div>
 <style id="hostgator-revamp">
   :root {--hg-navy:#041133;--hg-navy-2:#0b1c48;--hg-blue:#0f3fb4;--hg-yellow:#ffb400;--hg-muted:#6b7085;--hg-panel:#0d1f4a;--hg-radius:16px;}
-  .hg-page{background:#f9f9fb;color:var(--hg-navy);} .hg-page section{padding:80px 0;} .hg-page h1,.hg-page h2{line-height:1.15;}
+  .hg-page{background:#f9f9fb;color:var(--hg-navy);font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;} .hg-page section{padding:80px 0;} .hg-page h1,.hg-page h2{line-height:1.15;}
   .hg-container{width:min(1200px,92vw);margin:0 auto;}
   .hg-hero{background:linear-gradient(135deg,var(--hg-navy) 0%,#020a22 60%,#0c1f4e 100%);color:#fff;padding:120px 0 100px;}
   .hg-hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center;}
@@ -272,6 +272,22 @@ Fine, Twist Our Arm<span class="text-highlight">.</span></p></h2></div></div></d
   .hg-plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:22px;} .hg-plan{background:#fff;border-radius:var(--hg-radius);padding:20px;border:1px solid #e0e5f2;box-shadow:0 10px 26px rgba(0,0,0,0.08);} .hg-plan h3{margin:0 0 10px;} .hg-plan ul{margin:0;padding-left:18px;color:var(--hg-muted);} .hg-plan li{margin-bottom:6px;}
   .hg-cta{background:linear-gradient(135deg,var(--hg-navy) 0%,#0b1c48 100%);color:#fff;border-radius:22px;padding:60px 30px;box-shadow:0 18px 46px rgba(0,0,0,0.28);text-align:center;}
   @media (max-width:900px){.hg-hero{padding-top:80px;} .hg-page section{padding:64px 0;}}
+  .hero-card{position:relative;border-radius:24px;background:radial-gradient(circle at top left,rgba(129,140,248,0.35),rgba(15,23,42,0.95));border:1px solid rgba(148,163,184,0.55);padding:18px;box-shadow:0 18px 40px rgba(15,23,42,0.5);overflow:hidden;}
+  .hero-card-pill{font-size:0.75rem;padding:0.25rem 0.7rem;border-radius:999px;background:rgba(15,23,42,0.7);border:1px solid rgba(148,163,184,0.7);color:#c7d2fe;text-transform:uppercase;}
+  .hero-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.9rem;}
+  .hero-card-title{font-size:0.95rem;letter-spacing:0.07em;color:#e5e7eb;font-weight:700;text-transform:uppercase;}
+  .hero-card-sub{color:#9ca3af;font-size:0.82rem;}
+  .hero-usage{background:rgba(15,23,42,0.8);border-radius:18px;padding:0.8rem 0.85rem;border:1px solid rgba(148,163,184,0.4);margin-bottom:1rem;}
+  .hero-usage-row{display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:0.45rem;color:#e5e7eb;}
+  .hero-usage-label{color:var(--hg-muted);font-size:0.75rem;}
+  .hero-usage-bar{position:relative;height:6px;border-radius:999px;background:rgba(30,64,175,0.45);overflow:hidden;margin-top:0.35rem;}
+  .hero-usage-bar span{position:absolute;inset:0;width:72%;background:linear-gradient(90deg,#4f46e5,#22c55e);box-shadow:0 0 14px rgba(56,189,248,0.6);}
+  .hero-stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.75rem;margin-bottom:1rem;font-size:0.78rem;}
+  .hero-stat{background:rgba(15,23,42,0.8);border-radius:16px;padding:0.55rem 0.65rem;border:1px solid rgba(148,163,184,0.4);}
+  .hero-stat-label{color:var(--hg-muted);font-size:0.75rem;margin-bottom:0.15rem;}
+  .hero-stat-value{font-weight:700;font-size:0.9rem;color:#e5e7eb;}
+  .hero-stat-tag{font-size:0.7rem;color:#bbf7d0;}
+  .hero-card-footer{display:flex;justify-content:space-between;align-items:center;gap:0.75rem;margin-top:0.6rem;font-size:0.78rem;color:var(--hg-muted);}
 </style>
 <main class="hg-page">
   <section class="hg-hero">
@@ -284,14 +300,54 @@ Fine, Twist Our Arm<span class="text-highlight">.</span></p></h2></div></div></d
           <a class="hg-btn" href="/contact/">Launch on HostGator</a>
           <a class="hg-btn hg-outline" href="/results/">See success stories</a>
         </div>
-        <div class="hg-badges">
-          <span class="hg-pill">Free migrations</span>
-          <span class="hg-pill">cPanel + WordPress experts</span>
-          <span class="hg-pill">Daily backups &amp; security</span>
-        </div>
+      <div class="hg-badges">
+        <span class="hg-pill">Free migrations</span>
+        <span class="hg-pill">cPanel + WordPress experts</span>
+        <span class="hg-pill">Daily backups &amp; security</span>
       </div>
-      <div>
-        <img src="/wp-content/uploads/prouploads/Gemini_Generated_Image_q1hdu4q1hdu4q1hd.png" alt="Specialist presenting HostGator hosting plan">
+    </div>
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <div>
+            <div class="hero-card-pill">White-label ready</div>
+            <div class="hero-card-title">Reseller stack</div>
+            <div class="hero-card-sub">HostGator + DGS ops</div>
+          </div>
+          <div class="hero-card-pill">24/7</div>
+        </div>
+        <div class="hero-usage">
+          <div class="hero-usage-row">
+            <span class="hero-usage-label">Resource allocations used</span>
+            <span>72%</span>
+          </div>
+          <div class="hero-usage-bar"><span></span></div>
+        </div>
+        <div class="hero-stats-grid">
+          <div class="hero-stat">
+            <div class="hero-stat-label">Uptime</div>
+            <div class="hero-stat-value">99.9%</div>
+            <div class="hero-stat-tag">SLA-backed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-label">Migrations</div>
+            <div class="hero-stat-value">48 hrs</div>
+            <div class="hero-stat-tag">Avg cutover</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-label">Support</div>
+            <div class="hero-stat-value">White-label</div>
+            <div class="hero-stat-tag">Client-facing</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-label">Backups</div>
+            <div class="hero-stat-value">Daily</div>
+            <div class="hero-stat-tag">Verified restores</div>
+          </div>
+        </div>
+        <div class="hero-card-footer">
+          <span>Monitoring, alerts, and incident response bundled in.</span>
+          <span class="hero-card-pill" style="text-transform:none;">Free migrations</span>
+        </div>
       </div>
     </div>
   </section>
